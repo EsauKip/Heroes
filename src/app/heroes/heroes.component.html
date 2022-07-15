@@ -3,7 +3,7 @@
 <div><span>id:</span>{{hero.id}}</div>
 <div><span>Name:</span>{{hero.name}} Posted on:{{hero.date | date}}</div> -->
 
-<div>
+<div >
     <label for="name">Name:</label>
     <input [(ngModel)]="hero.name" id="name" placeholder="name">
 </div>
@@ -19,3 +19,12 @@
         </button>
     </li>
 </ul>
+<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name | uppercase}} is my hero</h2>
+ <div>id: {{selectedHero.id}}</div>
+ <div>
+    <label for="hero-mame">Hero Name: </label>
+    <input [(ngModel)]="selectedHero.name" id="hero-name" placeholder="name">
+ </div>
+
+</div>
