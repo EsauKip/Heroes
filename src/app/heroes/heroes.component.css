@@ -1,0 +1,19 @@
+ li button{
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(89, 144, 158);
+
+}
+li button:hover{
+    text-decoration: none;
+}
+.badge{
+    margin-left: 10px;
+}
+.name{
+    margin-left: 10px;
+}
+li{
+    list-style: none;
+    
+}
